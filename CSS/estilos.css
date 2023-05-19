@@ -1,7 +1,7 @@
 body {
       margin: 0;
       padding: 0;
-      background-color: red;
+      background-color:#ffff;
     }
 .navbar{
   background: linear-gradient(to right, #18242D, #1478C6);
