@@ -76,12 +76,12 @@ body {
 }
 
 #login input::placeholder {
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #E4E4E4;
 }
 
 #login button {
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 110%;
     color: #1b262c;
     width: 100%;
@@ -134,4 +134,18 @@ body {
 
 .inferior a:hover {
     color: #3282b8;
+}
+/* footer */
+footer{
+    background: linear-gradient(to right, #18242D, #1478C6);
+    /* height: 76px; */
+    width: 100%;
+    justify-content: center;
+}
+.h3__footer{
+    font-family: var(--tipografia);
+    color: #e7f6ff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12pt;
 }

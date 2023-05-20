@@ -1,5 +1,6 @@
 :root {
     --tipografia: "Montserrat";
+    --menu: #1478C6;
 }
 /* header */
 .navbar{
@@ -69,6 +70,13 @@
     height: 250px;
     /* margin: auto; */
 }
+/* titulo */
+h3{
+  font-family: 'Montserrat';
+  color: var(--menu);
+  text-align: center;
+  font-size: 35pt;
+}
 
 /* seccion tarjetas */
 .section__tarjetas{
@@ -79,7 +87,7 @@
 .tarjeta{
   display:flex;
   flex-direction:column;
-  justify-content:space-between;
+  justify-content:space-around;
   width:420px;
   border: 1px solid lightgray;
   box-shadow: 2px 2px 8px 4px #d3d3d3d1;
