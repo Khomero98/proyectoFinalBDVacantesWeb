@@ -1,0 +1,118 @@
+:root {
+    --tipografia: "Montserrat";
+}
+/* header */
+.navbar{
+    background: linear-gradient(to right, #18242D, #1478C6);
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+  }
+.navbar-brand{
+    margin-left:1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand__text-logo{
+    color: #e7f6ff;
+    font-family: var(--tipografia);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 0.5em;
+}
+.div__iniciarSesion{
+    color: #FFFF;
+    margin-right: 1.5em;
+
+}
+.div__iniciarSesion-a{
+    display: flex;
+    align-items: center;
+    color: #e7f6ff;
+    text-decoration: none;
+    outline: none;
+}
+.iniciarSesion__texto{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #e7f6ff;
+    margin-left: 0.5em;
+
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 40
+}
+.span__iniciarSesion-icono{
+    width: 30px;
+    color: #e7f6ff;
+}
+
+/* formulario */
+.formulario{
+    font-family:'Roboto', sans-serif;
+    width: 50%;
+    padding:2em;
+  }
+  input{
+    margin-top:0.2em;
+    margin-bottom:0.2em;
+  }
+  
+  label{
+    color:#0F3452;
+    margin-top:0.2em;
+    font-size: large;
+  }
+  h5{
+    color: #1478C6;
+  }
+  
+  .cajaForm{
+    margin-top:2em;
+    margin-bottom:4em;
+  }
+  .cajaForm-2{
+    margin-top:1em;
+    margin-bottom:1em;
+  }
+  textarea{width:100%;
+  border-color: #1478C6;
+  border-radius:10px;
+  color:#575757 ;
+  margin-top:0.2em;
+  }
+  .edad input{
+  margin-top:0.5em;
+  margin-bottom:0.5em;
+  }
+  .edad {margin-top:1em;margin-bottom:1.5em;}
+  
+  input[type="date"]{
+    border:solid #d3d3d3 0.3px;
+    border-radius:5px;
+    width:100%;
+    height:2.5em;
+    position: center;
+    margin: left 0.5em;
+    padding:0.2em;
+    color: #575757;
+  }
+  .cajaFormSubmit button{
+    width: 40%;
+    margin-left:2.2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }

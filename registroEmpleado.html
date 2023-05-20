@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Empleado</title>
+    <!--estilos de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Iconos Fontawesome-->
+    <script src="https://kit.fontawesome.com/7e5eb1178a.js" crossorigin="anonymous"></script>
+    <!--Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <!-- iconos google -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,1,0" />
+    <!-- estilos propios -->
+    <!--estilos propios  -->
+    <link rel="icon" type="image/x-icon" href="/IMG/LogoPagina.ico">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/registroEmpleado.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="" class="navbar-brand">
+                <img src="IMG/LogoPagina_2.png" alt="Logo empresa" width="30" height="30" class="Logo___icon">
+                <span class="navbar-brand__text-logo">Vacantes Web</span>
+            </a>
+        </nav>
+
+    </header>
+    <section class="container formulario">
+        <form action="">
+            <div class="cajaForm">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="apellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidos">
+                </div>
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Direccion de residencia</label>
+                    <input type="text" class="form-control" id="direccion">
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="telefono">
+                </div>
+                <div class="mb-3">
+                    <label for="sexo" class="form-label">Sexo</label>
+                    <select id="sexo" class="form-select">
+                        <option selected>Elige...</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="estadoCivil" class="form-label">Estado civil</label>
+                    <select id="estadoCivil" class="form-select">
+                        <option selected>Elige...</option>
+                        <option>Soltero</option>
+                        <option>Casado</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="nivelEstudio" class="form-label">Nivel de estudios</label>
+                    <select id="nivelEstudio" class="form-select">
+                        <option selected>Elige...</option>
+                        <option>Educación Secundaria</option>
+                        <option>Educación Tecnica</option>
+                        <option>Educación Profesional</option>
+                        <option>Maestria</option>
+                        <option>Doctorado</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="experiencia">Experiencia</label>
+                    <textarea name="descripcion" rows="5" cols="40" id="experiencia"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="perfilProfesional">Perfil profesional</label>
+                    <textarea name="descripcion" rows="5" cols="40" id="perfilProfesional"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="tipoId" class="form-label">Tipo de identificacion</label>
+                    <select id="tipoId" class="form-select">
+                        <option selected>Elige...</option>
+                        <option>CC</option>
+                        <option>CE</option>
+                        <option>NIP</option>
+                        <option>NIT</option>
+                        <option>TI</option>
+                        <option>PAP</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+:root {
+    --tipografia: "Montserrat";
+}
+/* header */
+.navbar{
+    background: linear-gradient(to right, #18242D, #1478C6);
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+  }
+.navbar-brand{
+    margin-left:1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand__text-logo{
+    color: #e7f6ff;
+    font-family: var(--tipografia);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 0.5em;
+}
+.div__iniciarSesion{
+    color: #FFFF;
+    margin-right: 1.5em;
+
+}
+.div__iniciarSesion-a{
+    display: flex;
+    align-items: center;
+    color: #e7f6ff;
+    text-decoration: none;
+    outline: none;
+}
+.iniciarSesion__texto{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #e7f6ff;
+    margin-left: 0.5em;
+
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 40
+}
+.span__iniciarSesion-icono{
+    width: 30px;
+    color: #e7f6ff;
+}
+/* banner */
+.section__banner{
+    background-image: url(../../IMG/LogoPagina.png);
+    background-repeat: no-repeat;
+    background-size: 152px;
+    background-position: 50%;
+    /* width: 100%; */
+    height: 250px;
+    /* margin: auto; */
+}
+
+/* seccion tarjetas */
+.section__tarjetas{
+    display: flex;
+    margin: 1.5em;
+    justify-content: space-between;
+}
+.tarjeta{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width:420px;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius:15px;
+  font-family: sans-serif;
+}
+.titulo{
+  font-size: 24px;
+  padding: 10px 10px 0 10px;
+  font-family: var(--tipografia);
+  text-align: center;
+  font-size: large;
+  text-transform: uppercase;
+}
+.cuerpo{
+  padding: 10px;
+  font-family: var(--tipografia);
+  font-size: small;
+  /* font-weight: 0; */
+  text-align: center;
+  text-transform: uppercase;
+}
+.pie{
+  background: #6699ff;
+  border-radius:0 0 15px 15px;
+  padding: 10px;
+  text-align:center;
+  background: #1478C6;
+}
+.pie a{
+  text-decoration: none;
+  color: white;
+  font-family: var(--tipografia);
+}
+/* .pie a:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: ""
+} */
+.img__cuerpo-tarjeta{
+    width: 100%;
+    margin: 10px 0
+}
+
+/* botones a formularios */
+.section__botonesFormularios{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px;
+}
+.button__formulario{
+    background: #1478C6;
+    padding: 10px 100px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #e7f6ff;
+    font-family: var(--tipografia);
+    font-size: 20pt;
+}
+
+/* footer */
+footer{
+    background: linear-gradient(to right, #18242D, #1478C6);
+    /* height: 76px; */
+    width: 100%;
+    justify-content: center;
+}
+.h3__footer{
+    font-family: var(--tipografia);
+    color: #e7f6ff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12pt;
+}
