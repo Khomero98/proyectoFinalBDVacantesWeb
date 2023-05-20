@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulacion</title>
+    <!--estilos de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Iconos Fontawesome-->
+    <script src="https://kit.fontawesome.com/7e5eb1178a.js" crossorigin="anonymous"></script>
+    <!--Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <!-- estilos propios -->
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="CSS/postulacion.css">
+    <link rel="icon" type="image/x-icon" href="/IMG/LogoPagina.ico">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="JS/msjConfirmPostula.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="indexPostualnte.html">
+                <img src="IMG/LogoPagina_2.png" width="30" height="30" class="d-inline-block align-top"
+                    alt="Logo pagina Vacantes Web">
+                <span class="navbar-text">
+                    Vacantes Web
+                </span>
+            </a>
+            <div class="cerrarSesion">
+                <a href="index.html"><span class="myicono"><i class="fa-solid fa-power-off"></i></span>Cerrar sesión</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- side bar -->
+        <div class="mycolorSidebar">
+            <div class="postulanteFoto">
+                <a href="#"><img src="IMG/FotoEmpresa.png" width="90vh" height="90vh" alt="foto de la empresa"></a>
+                <h5 class="nombrePos text-white">Nombre postulante</h5>
+            </div>
+            <div class="linea"></div>
+            <!--Botones sidebar-->
+            <ul class="nav nav-pills opcionesbtn flex-column mt-4">
+                <li class="nav-item ">
+                    <a href="indexPostualnte.html" class="nav-link active text-white" aria-current="page"><span class="myicono"><i
+                                class="fa-solid fa-bookmark"></i></span>Postulaciones</a>
+                </li>
+                <li class="nav-item mt-4">
+                    <a href="editPerfil.html" class="nav-link text-white"><span class="myicono"> <i
+                                class="fa-solid fa-address-card"></i></span>Editar Perfil</a>
+                </li>
+            </ul>
+        </div>
+        <!-- postulacion -->
+        <div class="postulaciondiv">
+            <h1 class="nombreVacante">Nombre de la vacante</h1>
+            <h2 class="nombreEmpresa">nombre de la empresa</h2>
+            <h3 class="descripcion titulo3">Descripcion de la vacante</h3>
+            <p class="descripcionParrafo parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+                veniam tenetur alias! Labore aliquid repellendus animi pariatur nemo debitis saepe. Sequi hic, id
+                accusantium doloremque distinctio quasi natus dolor aut.</p>
+            <h3 class="perfil titulo3">Perfil</h3>
+            <p class="perfilParrafo parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non repellendus
+                dolorem ipsam nam hic accusamus commodi distinctio corrupti molestiae autem corporis deleniti, neque
+                necessitatibus, qui velit, libero aperiam quas. Officiis.</p>
+            <h3 class="contacto titulo3">Contacto</h3>
+            <h3 class="salario titulo3">Salario</h3>
+            <h3 class="ubicacion titulo3">ubicacion</h3>
+            <button class="btnPostular" onclick="alerta()">Postularme</button>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Empleado</title>
+    <!--estilos de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Iconos Fontawesome-->
+    <script src="https://kit.fontawesome.com/7e5eb1178a.js" crossorigin="anonymous"></script>
+    <!--Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <!-- iconos google -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,1,0" />
+    <!--estilos propios  -->
+    <link rel="icon" type="image/x-icon" href="/IMG/LogoPagina.ico">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/editPerfil.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="indexPostualnte.html">
+                <img src="IMG/LogoPagina_2.png" width="30" height="30" class="d-inline-block align-top"
+                    alt="Logo pagina Vacantes Web">
+                <span class="navbar-text">
+                    Vacantes Web
+                </span>
+            </a>
+            <div class="cerrarSesion">
+                <a href="index.html"><span class="myicono"><i class="fa-solid fa-power-off"></i></span>Cerrar sesión</a>
+            </div>
+        </nav>
+    </header>
+    <!-- side bar -->
+    <main>
+        <div class="mycolorSidebar">
+            <div class="postulanteFoto">
+                <a href="#"><img src="IMG/FotoEmpresa.png" width="90vh" height="90vh"
+                        alt="foto de la empresa"></a>
+                <h5 class="nombrePos text-white">Nombre postulante</h5>
+            </div>
+            <div class="linea"></div>
+            <!--Botones sidebar-->
+            <ul class="nav nav-pills opcionesbtn flex-column mt-4">
+                <li class="nav-item ">
+                    <a href="indexPostualnte.html" class="nav-link  text-white" aria-current="page"><span class="myicono"><i
+                                class="fa-solid fa-bookmark"></i></span>Postulaciones</a>
+                </li>
+                <li class="nav-item mt-4">
+                    <a href="editPerfil.html" class="nav-link active text-white"><span class="myicono"> <i
+                                class="fa-solid fa-address-card"></i></span>Editar Perfil</a>
+                </li>
+            </ul>
+        </div>
+        <!-- formulario -->
+        <section class="container formulario">
+            <form action="">
+                <div class="input-file-container mx-auto">
+                    <div class="input-file">
+                        <p class="input-file__name">Escoge una foto</p>
+                        <button type="button" class="input-file__button">
+                            <i class="fas fa-upload"></i>
+                        </button>
+                        <input type="file" name="avatar" id="avatarInput">
+                    </div>
+                    <img src="https://i.ibb.co/0Jmshvb/no-image.png" class="image-preview" alt="preview image">
+                </div>
+                <h5>Datos</h5>
+                <div class="linea2"></div>
+                <div class="cajaForm">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombres</label>
+                        <input type="text" class="form-control" id="nombre" required disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellidos" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apellidos" required disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="direccion" class="form-label">Direccion de residencia</label>
+                        <input type="text" class="form-control" id="direccion" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input type="number" class="form-control" id="telefono" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sexo" class="form-label">Sexo</label>
+                        <select id="sexo" class="form-select" required>
+                            <option selected>Elige...</option>
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="estadoCivil" class="form-label">Estado civil</label>
+                        <select id="estadoCivil" class="form-select" required>
+                            <option selected>Elige...</option>
+                            <option>Soltero</option>
+                            <option>Casado</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nivelEstudio" class="form-label">Nivel de estudios</label>
+                        <select id="nivelEstudio" class="form-select" required>
+                            <option selected>Elige...</option>
+                            <option>Educación Secundaria</option>
+                            <option>Educación Tecnica</option>
+                            <option>Educación Profesional</option>
+                            <option>Maestria</option>
+                            <option>Doctorado</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="experiencia">Experiencia</label>
+                        <textarea name="descripcion" rows="5" cols="40" id="experiencia" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="perfilProfesional">Perfil profesional</label>
+                        <textarea name="descripcion" rows="5" cols="40" id="perfilProfesional" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tipoId" class="form-label">Tipo de identificacion</label>
+                        <select id="tipoId" class="form-select" required disabled>
+                            <option selected>Elige...</option>
+                            <option>CC</option>
+                            <option>CE</option>
+                            <option>NIP</option>
+                            <option>NIT</option>
+                            <option>TI</option>
+                            <option>PAP</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="numIdentificacion" class="form-label">Numero</label>
+                        <input type="number" class="form-control" id="numIdentificacion" required disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pais" class="form-label">Pais</label>
+                        <select id="pais" class="form-select" required>
+                            <option selected>Elige...</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ciudad" class="form-label">Ciudad</label>
+                        <select id="ciudad" class="form-select" required>
+                            <option selected>Elige...</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="correo" required disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="clave" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="clave" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmClave" class="form-label">Confirmar Contraseña</label>
+                        <input type="password" class="form-control" id="confirmClave" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="CV" class="form-label">Hoja de vida</label>
+                        <input type="file" class="form-control" id="CV" accept=".pdf" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="video" class="form-label">Video</label>
+                        <input type="file" class="form-control" id="video" accept=".mp4,.mov" required>
+                    </div>
+                </div>
+                <div class="cajaFormSubmit">
+                    <div class="buttonsFormulario">
+                        <button type="submit" class="btn btn-primary m-1 guardar" >Guardar</button>
+                        <button class="btn btn-danger m-1 cancelar">Cancelar</button>
+                    </div>
+                    
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <script src="JS/fotoPerfil.js"></script>
+</body>
+
+</html>

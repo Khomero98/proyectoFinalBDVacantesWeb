@@ -1,0 +1,181 @@
+:root {
+    --tipografia: "Montserrat";
+    --colorMenu: #1478C6;
+}
+
+main {
+    display: flex;
+}
+
+/* header */
+.navbar {
+    background: linear-gradient(to right, #18242D, #1478C6);
+    color: #ffff;
+    font-family: var(--tipografia), sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    margin-left: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-text {
+    color: #e7f6ff;
+    font-family: var(--tipografia);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 0.5em;
+}
+
+.cerrarSesion a {
+    color: #FFFF;
+    text-decoration: none;
+    margin: 1.5em;
+}
+
+/* sidebar */
+.myicono {
+    padding-right: 1em;
+}
+
+.mycolorSidebar {
+    background-color: #18242D;
+    /* position: fixed; */
+    height: 100vh;
+    padding: 2vh;
+    width: 60vh;
+    font-family: var(--tipografia), sans-serif;
+}
+
+.postulanteFoto {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30%;
+    margin-top: 10%;
+
+}
+
+.nombrePos {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 100%;
+    font-size: 20pt;
+}
+
+.linea {
+    border-top: 1px solid #ffff;
+    height: 2px;
+    padding: 0;
+    margin: 1vh;
+}
+
+/* lista de botnes sidebar */
+.contenidoPanel {
+    position: fixed;
+    width: 80%;
+    height: 90vh;
+    margin-left: 41vh;
+    margin-right: 1vh;
+    margin-top: 1vh;
+}
+
+.titulo_style {
+    color: #575757;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.linea2 {
+    border-top: 1px solid #1478C6;
+    height: 2px;
+    padding: 0;
+}
+
+.tablaInfo {
+    margin-top: 5vh;
+    height: 55vh;
+    overflow: scroll;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tablaInfo th {
+    color: #575757;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.btn_icon {
+    color: #575757;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    float: right;
+    padding: 1vh;
+}
+
+.plusIcon {
+    color: #1478C6;
+    font-size: 1.5rem;
+}
+
+/* postulacion info */
+.postulaciondiv {
+    padding: 30px;
+}
+
+.nombreVacante {
+    font-family: var(--tipografia);
+    font-size: 2rem;
+    margin: 20px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1478C6;
+}
+
+.nombreEmpresa {
+    font-family: var(--tipografia);
+    font-size: 1.8rem;
+    margin: 20px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1478C6;
+}
+
+.titulo3 {
+    font-family: var(--tipografia);
+    font-size: 1.5rem;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.parrafo {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1478C6;
+}
+/* boton postular */
+.btnPostular{
+    background: #1478C6;
+    padding: 10px 100px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #e7f6ff;
+    font-family: var(--tipografia);
+    font-size: 20pt;
+    border-color: #FFFF;
+}

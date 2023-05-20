@@ -92,7 +92,6 @@ h3{
   border: 1px solid lightgray;
   box-shadow: 2px 2px 8px 4px #d3d3d3d1;
   border-radius:15px;
-  font-family: sans-serif;
 }
 .titulo{
   font-size: 24px;
@@ -122,15 +121,6 @@ h3{
   color: white;
   font-family: var(--tipografia);
 }
-/* .pie a:after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  content: ""
-} */
 .img__cuerpo-tarjeta{
     width: 100%;
     margin: 10px 0
