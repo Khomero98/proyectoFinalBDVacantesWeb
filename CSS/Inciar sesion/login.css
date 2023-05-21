@@ -17,25 +17,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    margin: 0;
-    padding: 0;
-    min-width: 100vw;
-    min-height: 100vh;
-    width: 100%;
-    height: 100%;
 }
 
 #central {
+    margin-top: 3vh;
     max-width: 320px;
     width: 100%;
+    background-color: red;
 }
 
 .titulo {
     font-size: 250%;
     color: #bbe1fa;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15%;
 }
 
 #login {
@@ -82,8 +77,9 @@ body {
 
 #login button {
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     font-size: 110%;
-    color: #1b262c;
+    color:#1478C6;
     width: 100%;
     height: 40px;
     border: none;
@@ -93,8 +89,6 @@ body {
     -webkit-border-radius: 3px 3px 3px 3px;
 
     background-color: #bbe1fa;
-
-    margin-top: 10px;
 }
 
 #login button:hover {
@@ -105,7 +99,6 @@ body {
 .pie-form {
     font-size: 90%;
     text-align: center;
-    margin-top: 15px;
 }
 
 .pie-form a {
@@ -120,7 +113,8 @@ body {
 }
 
 .inferior {
-    margin-top: 10px;
+
+    margin-top:10%;
     font-size: 90%;
     text-align: center;
 }
@@ -135,17 +129,6 @@ body {
 .inferior a:hover {
     color: #3282b8;
 }
-/* footer */
-footer{
-    background: linear-gradient(to right, #18242D, #1478C6);
-    /* height: 76px; */
-    width: 100%;
-    justify-content: center;
-}
-.h3__footer{
-    font-family: var(--tipografia);
-    color: #e7f6ff;
-    text-align: center;
-    padding: 10px;
-    font-size: 12pt;
+#loginform label{
+    font-family: 'Roboto', sans-serif;
 }

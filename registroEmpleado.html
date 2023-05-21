@@ -23,32 +23,44 @@
     <link rel="icon" type="image/x-icon" href="/IMG/LogoPagina.ico">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/registroEmpleado.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="navbar-brand">
-                <img src="IMG/LogoPagina_2.png" alt="Logo empresa" width="30" height="30" class="Logo___icon">
-                <span class="navbar-brand__text-logo">Vacantes Web</span>
-            </a>
-        </nav>
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">
+            <img src="IMG/LogoPagina_2.png" width="30" height="30" class="d-inline-block align-top"
+                alt="Logo pagina Vacantes Web">
+            <span class="navbar-text"> Vacantes Web</span>
+        </a>
+        <div id="sesion">
+            <a href="iniciarSesion.html"><span class="myicono"><i class="fa-solid fa-circle-user" style="color: #ffffff;"></i></span>Iniciar sesión</a>
+        </div>
+    </nav>
 
-    </header>
-    <section class="container formulario">
+    <div class="LogoImagen mt-3">
+        <img src="IMG/LogoPagina.png" alt="Logo Vacantes web" width="10%" >
+    </div>
+
+    <section class="container formularioRegistro">
+        <div class="container">
+            <div class="encabezado-registro">
+                <h1 class="text-center mb-4 mt-2">Registro</h1>
+                <p class="parrafont mb-0">Registrate para acceder a todas las vacantes disponibles</p>
+                <p class="parrafont mb-5">¿Ya tienes una credencial?, <a href="iniciarSesion.html">Inicia sesión</a></p>
+            </div>
+        </div>
         <form action="">
             <div class="input-file-container mx-auto">
-                <div class="input-file">
+                <img src="https://i.ibb.co/0Jmshvb/no-image.png" class="image-preview mt-5" alt="preview image">
+                <div class="input-file mt-3">
                     <p class="input-file__name">Escoge una foto</p>
                     <button type="button" class="input-file__button">
                         <i class="fas fa-upload"></i>
                     </button>
                     <input type="file" name="avatar" id="avatarInput">
                 </div>
-                <img src="https://i.ibb.co/0Jmshvb/no-image.png" class="image-preview" alt="preview image">
             </div>
-            <h5>Datos</h5>
-            <div class="linea2"></div>
             <div class="cajaForm">
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombres</label>
@@ -151,17 +163,21 @@
                     <input type="file" class="form-control" id="video" accept=".mp4,.mov" required>
                 </div>
             </div>
-            <div class="cajaFormSubmit">
+            <div class="cajaFormSubmit-2">
                 <div class="mx-auto" style="width: 300px;">
                     <input type="checkbox" class="form-check-input" id="terminos" required>
                     <label for="terminos" class="form-check-label">Acepta los <span><a href="#">Terminos y
                                 condiciones</a></span></label>
-
+                    <button type="submit" class="btn btn-primary">Registrar</button>
                 </div>
-                <button type="submit" class="btn btn-primary">Registrar</button>
+                
             </div>
         </form>
     </section>
+    <footer>
+        <p class="parrafooter">Proyecto Bases datos 2023-1</p>
+        <p class="parrafooter">Creado por: Gissel Morales y Juan Pulido</p>
+    </footer>
     <script src="JS/fotoPerfil.js"></script>
 </body>
 

@@ -2,7 +2,7 @@
   --tipografia: 'Montserrat';
   --colorMenu: #1478C6;
 }
-
+p{font-family: 'Roboto', sans-serif;}
 .navbar {
   background: linear-gradient(to right, #18242D, #1478C6);
   color: #ffff;
@@ -143,6 +143,13 @@ a.fotoEmp {
   width: 50%;
   padding: 2em;
 }
+.formularioRegistro{
+  font-family:'Roboto', sans-serif;
+  width: 50%;
+  padding:0.5em 1em 0.5em 1em;
+  border-radius: 2em;
+  box-shadow: 0px 10px 10px -2px rgb(89, 89, 89);
+}
 
 input {
   margin-top: 0.2em;
@@ -202,4 +209,45 @@ input[type="date"] {
   margin-left: 2.2em;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+.cajaFormSubmit-2 button {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+footer{
+  background: linear-gradient(to right, #18242D, #1478C6);
+  text-align: center;
+  padding:1em;
+  margin-top: 3em;
+  background-color: DarkSalmon;
+  color: white;
+}
+.parrafooter{margin: 0; font-style: italic; font-size:0.8em;}
+.submitBtn{width: 100%;}
+#sesion a{
+  color: #FFFF;
+  text-decoration: none;
+  margin: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+}
+.encabezado-registro{margin-top:5%;}
+.encabezado-registro p{padding:0.5em;}
+.encabezado-registro h1{
+  color: #1478C6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size:2rem;
+}
+.LogoImagen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:1em 0em 1em 0em;
+}
+
+.navbar-text{
+  font-family:'Montserrat', sans-serif;
+  font-weight: lighter;
+  margin-left:1em;
 }
