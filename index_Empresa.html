@@ -17,12 +17,12 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
     <link rel="icon" type="image/x-icon" href="/IMG/LogoPagina.ico">
-    <title>Vacantes Web</title>
+    <title>Vacantes Web nombre empresa</title>
 </head>
 
 <body>
     <!--Encabezado de la pagina y cerrar sesion-->
-    <nav class="navbar">
+    <nav class="navbar fixed-top">
         <a class="navbar-brand" href="#">
             <img src="IMG/LogoPagina_2.png" width="30" height="30" class="d-inline-block align-top"
                 alt="Logo pagina Vacantes Web">
@@ -38,29 +38,30 @@
     <!--Menu sideNav-->
     <div class="container-fluid">
         <div class=" row flex-nowrap">
-            <div class="mycolorSidebar col-auto min-vh-100">
-
-                <div class="empresaFoto">
-                    <a class="fotoEmp" href="#"><img src="IMG/FotoEmpresa.png" width="90vh" height="90vh"
-                            alt="foto de la empresa"></a>
+            <div class="mycolorSidebar position-fixed">
+                <div class="container sidebarContenido">
+                    <div class="empresaFoto">
+                        <a class="fotoEmp" href="#"><img src="IMG/FotoEmpresa.png" width="90vh" height="90vh"
+                                alt="foto de la empresa"></a>
+                    </div>
                     <h5 class="nombreEmp text-white">Nombre de la empresa</h5>
+                    <div class="linea"></div>
+                    <!--Botones sidebar-->
+                    <ul class="nav nav-pills opcionesbtn flex-column mt-4">
+                        <li class="nav-item mt-4">
+                            <a href="index_Empresa.html" class="nav-link active text-white" aria-current="page"><span
+                                    class="myicono"><i class="fa-solid fa-bookmark"></i></span>Convocatorias</a>
+                        </li>
+                        <li class="nav-item mt-4">
+                            <a href="EmpresaPostulantes.html" class="nav-link text-white"><span class="myicono"><i
+                                        class="fa-solid fa-users"></i></span>Postulantes</a>
+                        </li>
+                        <li class="nav-item mt-4">
+                            <a href="EmpresaPerfil.html" class="nav-link text-white"><span class="myicono"> <i
+                                        class="fa-solid fa-address-card"></i></span>Ver Perfil</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="linea"></div>
-                <!--Botones sidebar-->
-                <ul class="nav nav-pills opcionesbtn flex-column mt-4">
-                    <li class="nav-item mt-4">
-                        <a href="index_Empresa.html" class="nav-link active text-white" aria-current="page"><span
-                                class="myicono"><i class="fa-solid fa-bookmark"></i></span>Convocatorias</a>
-                    </li>
-                    <li class="nav-item mt-4">
-                        <a href="EmpresaPostulantes.html" class="nav-link text-white"><span class="myicono"><i
-                                    class="fa-solid fa-users"></i></span>Postulantes</a>
-                    </li>
-                    <li class="nav-item mt-4">
-                        <a href="#" class="nav-link text-white"><span class="myicono"> <i
-                                    class="fa-solid fa-address-card"></i></span>Ver Perfil</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
